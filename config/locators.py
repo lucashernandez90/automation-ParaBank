@@ -16,7 +16,7 @@ class RegisterLocators:
     PASSWORD_INPUT = (By.XPATH, "//input[@id= 'customer.password']")
     CONFIRM_INPUT = (By.XPATH, "//input[@id= 'repeatedPassword']")
 
-    REGISTER_BUTTON = (By.XPATH, "//input[@class= 'button']")
+    REGISTER_BUTTON = (By.XPATH, "//input[@value= 'Register']")
 
 class LoginLocators:
 

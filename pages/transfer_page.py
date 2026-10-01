@@ -11,8 +11,15 @@ class TransferPage(BasePage):
 
     def transfer(self, amount=TransferData.AMOUNT):
         self.wait.until(EC.element_to_be_clickable(TransferFundsLocators.TRANSFER_FUND_BUTTON)).click()
+        logging.info("button transfer clicked")
+
         self.wait.until(EC.visibility_of_element_located(TransferFundsLocators.AMOUNT_INPUT)).send_keys(amount)
+        logging.info("amount transfered")
+        time.sleep(2)
+
         self.wait.until(EC.visibility_of_element_located(TransferFundsLocators.TRANSFER_BUTTON)).click()
+        logging.info("button transfered clicked")
+        time.sleep(2)
         
 
 
