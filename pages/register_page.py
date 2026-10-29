@@ -6,6 +6,8 @@ from pages.base_page import BasePage
 from config.locators import RegisterLocators
 from config.settings import RegisterData
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.common.exceptions import TimeoutException
 
 class RegisterPage(BasePage):
 
@@ -36,3 +38,12 @@ class RegisterPage(BasePage):
         logging.info("register camps filled")
 
         time.sleep(5)
+
+    def username_already_exists(self, timeout=3):
+        try:
+            element = WebDriverWait(self.driver, timeout).until(
+                EC.visibility_of_element_located(RegisterLocators.USERNAME_ERROR)
+            )
+            return "already exists" in element.text.lower()
+        except TimeoutException:
+            return False

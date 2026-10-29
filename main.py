@@ -20,7 +20,11 @@ register_page.open()
 
 register_page.register()
 
-login_page.login()
+if register_page.username_already_exists():
+    logging.info("Usuário já existe, fazendo login...")
+    login_page.login()
+else:
+    logging.info("Cadastro realizado com sucesso")
 
 transfer_page.transfer()
 

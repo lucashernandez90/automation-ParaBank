@@ -17,6 +17,7 @@ class RegisterLocators:
     CONFIRM_INPUT = (By.XPATH, "//input[@id= 'repeatedPassword']")
 
     REGISTER_BUTTON = (By.XPATH, "//input[@value= 'Register']")
+    USERNAME_ERROR = (By.ID, "customer.username.errors")
 
 class LoginLocators:
 
