@@ -4,6 +4,7 @@ from config.browser import create_driver
 from pages.register_page import RegisterPage
 from pages.login_page import  LoginPage
 from pages.transfer_page import TransferPage
+from pages.new_account_page import NewAccountPage
 
 logging.basicConfig(
     level=logging.INFO,
@@ -15,6 +16,7 @@ driver = create_driver()
 register_page = RegisterPage(driver)
 login_page = LoginPage(driver)
 transfer_page = TransferPage(driver)
+new_account_page = NewAccountPage(driver)
 
 register_page.open()
 
@@ -27,5 +29,7 @@ else:
     logging.info("Cadastro realizado com sucesso")
 
 transfer_page.transfer()
+
+new_account_page.open_account()
 
 driver.quit()

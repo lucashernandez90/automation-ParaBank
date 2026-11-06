@@ -32,6 +32,14 @@ class TransferFundsLocators:
     AMOUNT_INPUT = (By.XPATH, "//input[@id= 'amount']")
     TRANSFER_BUTTON = (By.XPATH, "//input[@value= 'Transfer']")
 
-    
+class OpenNewAccountLocators:
+
+    LINK_NEW_ACCOUNT = (By.XPATH, "//a[text()= 'Open New Account']")
+    TYPE_ACCOUNT = (By.XPATH, "//select[@id= 'type']")
+    OPTION_CHECKING = (By.XPATH, "//option[@value = '0']")
+    OPTION_SAVINGS = (By.XPATH, "//option[@value = '1']")
+    SELECT_ACCOUNT = (By.XPATH, "//select[@id= 'fromAccountId']")
+    NEW_ACCOUNT_BUTTON = (By.XPATH, "//input[@type= 'button']")
+
 
     
