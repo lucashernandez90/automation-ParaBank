@@ -21,4 +21,4 @@ class NewAccountPage(BasePage):
         self.wait.until(EC.element_to_be_clickable(OpenNewAccountLocators.NEW_ACCOUNT_BUTTON)).click()
         logging.info("clicked on the button creat account")
 
-        time.sleep(10)
+        time.sleep(2)

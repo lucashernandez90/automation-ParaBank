@@ -39,7 +39,7 @@ class OpenNewAccountLocators:
     OPTION_CHECKING = (By.XPATH, "//option[@value = '0']")
     OPTION_SAVINGS = (By.XPATH, "//option[@value = '1']")
     SELECT_ACCOUNT = (By.XPATH, "//select[@id= 'fromAccountId']")
-    NEW_ACCOUNT_BUTTON = (By.XPATH, "//input[@type= 'button']")
+    NEW_ACCOUNT_BUTTON = (By.XPATH, "//input[@value= 'Open New Account']")
 
 class BillPaymentLocators:
     LINK_BILL_PAY = (By.XPATH, "//a[text()= 'Bill Pay']")
