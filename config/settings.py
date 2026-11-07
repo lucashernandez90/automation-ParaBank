@@ -29,3 +29,12 @@ class BillPaymentData:
 class LoanData:
     LOAN_AMMOUNT = "500"
     DOWN_PAYMENT = "100"
+
+class UpdateData:
+    UPDATE_FIRST_NAME = "Rubens"
+    UPDATE_LAST_NAME = "Silva"
+    UPDATE_ADDRESS = "Rua Teste"
+    UPDATE_CITY = "DF"
+    UPDATE_STATE = "Centro"
+    UPDATE_ZIP_CODE = "345"
+    UPDATE_PHONE = "11945467484"

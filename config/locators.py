@@ -62,3 +62,16 @@ class RequestLoanLocators:
     INPUT_LOAN_AMOUNT = (By.XPATH, "//input[@id= 'amount']")
     INPUT_DOWN_PAYMENT = (By.XPATH, "//input[@id= 'downPayment']")
     BUTTON_APPLY_LOAN = (By.XPATH, "//input[@value= 'Apply Now']")
+
+class UpdateLocators:
+
+    LINK_UPDATE_PROFILE = (By.XPATH, "//a[text()= 'Update Contact Info']")
+    INPUT_UPDATE_FIRST_NAME = (By.XPATH, "//input[@id= 'customer.firstName']")
+    INPUT_UPDATE_LAST_NAME = (By.XPATH, "//input[@id= 'customer.lastName']")
+    INPUT_UPDATE_ADDRESS = (By.XPATH, "//input[@id= 'customer.address.street']")
+    INPUT_UPDATE_CITY = (By.XPATH, "//input[@id= 'customer.address.city']")
+    INPUT_UPDATE_STATE = (By.XPATH, "//input[@id= 'customer.address.state']")
+    INPUT_UPDATE_ZIP_CODE = (By.XPATH, "//input[@id= 'customer.address.zipCode']")
+    INPUT_UPDATE_PHONE = (By.XPATH, "//input[@id= 'customer.phoneNumber']")
+    BUTTON_UPDATE_PROFILE = (By.XPATH, "//input[@value= 'Update Profile']")
+    
