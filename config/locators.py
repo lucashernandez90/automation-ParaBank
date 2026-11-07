@@ -42,6 +42,7 @@ class OpenNewAccountLocators:
     NEW_ACCOUNT_BUTTON = (By.XPATH, "//input[@value= 'Open New Account']")
 
 class BillPaymentLocators:
+
     LINK_BILL_PAY = (By.XPATH, "//a[text()= 'Bill Pay']")
     PAYEE_NAME = (By.XPATH, "//input[@name= 'payee.name']")
     PAYEE_ADDRESS = (By.XPATH, "//input[@name= 'payee.address.street']")
@@ -55,4 +56,9 @@ class BillPaymentLocators:
     PAYEE_FROM_ACCOUNT = (By.XPATH, "//input[@name= 'fromAccountId']")
     BUTTON_SEND_PAYAMENT = (By.XPATH, "//input[@value= 'Send Payment']")
 
-    
+class RequestLoanLocators:
+
+    LINK_REQUEST_LOAN = (By.XPATH, "//a[text()= 'Request Loan']")
+    INPUT_LOAN_AMOUNT = (By.XPATH, "//input[@id= 'amount']")
+    INPUT_DOWN_PAYMENT = (By.XPATH, "//input[@id= 'downPayment']")
+    BUTTON_APPLY_LOAN = (By.XPATH, "//input[@value= 'Apply Now']")

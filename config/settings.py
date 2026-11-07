@@ -25,3 +25,7 @@ class TransferData:
 class BillPaymentData:
     ACCOUNT = "14787"
     AMOUNT  = "300"
+
+class LoanData:
+    LOAN_AMMOUNT = "500"
+    DOWN_PAYMENT = "100"
