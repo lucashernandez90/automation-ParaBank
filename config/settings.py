@@ -21,3 +21,7 @@ class RegisterData:
 
 class TransferData:
     AMOUNT = "2000"
+
+class BillPaymentData:
+    ACCOUNT = "14787"
+    AMOUNT  = "300"

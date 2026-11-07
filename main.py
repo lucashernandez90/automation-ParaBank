@@ -5,6 +5,7 @@ from pages.register_page import RegisterPage
 from pages.login_page import  LoginPage
 from pages.transfer_page import TransferPage
 from pages.new_account_page import NewAccountPage
+from pages.bill_page import BillPage
 
 logging.basicConfig(
     level=logging.INFO,
@@ -17,6 +18,7 @@ register_page = RegisterPage(driver)
 login_page = LoginPage(driver)
 transfer_page = TransferPage(driver)
 new_account_page = NewAccountPage(driver)
+bill_page = BillPage(driver)
 
 register_page.open()
 
@@ -31,5 +33,7 @@ else:
 transfer_page.transfer()
 
 new_account_page.open_account()
+
+bill_page.bill_payment()
 
 driver.quit()

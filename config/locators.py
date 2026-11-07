@@ -41,5 +41,18 @@ class OpenNewAccountLocators:
     SELECT_ACCOUNT = (By.XPATH, "//select[@id= 'fromAccountId']")
     NEW_ACCOUNT_BUTTON = (By.XPATH, "//input[@type= 'button']")
 
+class BillPaymentLocators:
+    LINK_BILL_PAY = (By.XPATH, "//a[text()= 'Bill Pay']")
+    PAYEE_NAME = (By.XPATH, "//input[@name= 'payee.name']")
+    PAYEE_ADDRESS = (By.XPATH, "//input[@name= 'payee.address.street']")
+    PAYEE_CITY = (By.XPATH, "//input[@name= 'payee.address.city']")
+    PAYEE_STATE = (By.XPATH, "//input[@name= 'payee.address.state']")
+    PAYEE_ZIP_CODE = (By.XPATH, "//input[@name= 'payee.address.zipCode']")
+    PAYEE_PHONE = (By.XPATH, "//input[@name= 'payee.phoneNumber']")
+    PAYEE_ACCOUNT = (By.XPATH, "//input[@name= 'payee.accountNumber']")    
+    VERIFY_PAYEE_ACCOUNT = (By.XPATH, "//input[@name= 'verifyAccount']")
+    PAYEE_AMOUNT = (By.XPATH, "//input[@name= 'amount']")
+    PAYEE_FROM_ACCOUNT = (By.XPATH, "//input[@name= 'fromAccountId']")
+    BUTTON_SEND_PAYAMENT = (By.XPATH, "//input[@value= 'Send Payment']")
 
     
