@@ -21,4 +21,11 @@ class RequestPage(BasePage):
         self.wait.until(EC.element_to_be_clickable(RequestLoanLocators.BUTTON_APPLY_LOAN)).click()
         logging.info("button appply clicked")
 
-        time.sleep(5)
+    def get_success_loan_title(self):
+        return self.wait.until(EC.visibility_of_element_located(RequestLoanLocators.SUCCESS_LOAN_TITLE)).text
+
+    def get_success_loan_message(self):
+        return self.wait.until(EC.visibility_of_element_located(RequestLoanLocators.SUCCESS_LOAN_MESSAGE)).text
+
+    def get_loan_status(self):
+        return self.wait.until(EC.visibility_of_element_located(RequestLoanLocators.LOAN_STATUS)).text

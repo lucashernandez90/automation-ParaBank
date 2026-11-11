@@ -77,6 +77,10 @@ class RequestLoanLocators:
     INPUT_DOWN_PAYMENT = (By.XPATH, "//input[@id= 'downPayment']")
     BUTTON_APPLY_LOAN = (By.XPATH, "//input[@value= 'Apply Now']")
 
+    SUCCESS_LOAN_TITLE = (By.XPATH, "//h1[normalize-space()='Loan Request Processed']")
+    SUCCESS_LOAN_MESSAGE = (By.ID, "loanRequestApproved")
+    LOAN_STATUS = (By.ID, "loanStatus")
+
 class UpdateLocators:
 
     LINK_UPDATE_PROFILE = (By.XPATH, "//a[text()= 'Update Contact Info']")
