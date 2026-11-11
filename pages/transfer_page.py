@@ -15,11 +15,15 @@ class TransferPage(BasePage):
 
         self.wait.until(EC.visibility_of_element_located(TransferFundsLocators.AMOUNT_INPUT)).send_keys(amount)
         logging.info("amount transfered")
-        time.sleep(2)
 
         self.wait.until(EC.visibility_of_element_located(TransferFundsLocators.TRANSFER_BUTTON)).click()
         logging.info("button transfered clicked")
-        time.sleep(2)
+
+    def get_success_transfer_title(self):
+        return self.wait.until(EC.visibility_of_element_located(TransferFundsLocators.SUCCESS_TRANSFER_TITLE)).text
+
+    def get_success_transfer_message(self):
+        return self.wait.until(EC.visibility_of_element_located(TransferFundsLocators.SUCCESS_TRANSFER_MESSAGE)).text
         
 
 

@@ -32,5 +32,8 @@ class BillPage(BasePage):
         self.wait.until(EC.element_to_be_clickable(BillPaymentLocators.BUTTON_SEND_PAYAMENT)).click()
         logging.info("button payament clicked ")
 
-        time.sleep(2)
+    def get_result_title(self):
+        return self.wait.until(EC.visibility_of_element_located(BillPaymentLocators.RESULT_TITLE)).text
 
+    def get_result_message(self):
+        return self.wait.until(EC.visibility_of_element_located(BillPaymentLocators.RESULT_MESSAGE)).text
