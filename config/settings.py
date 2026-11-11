@@ -20,7 +20,7 @@ class RegisterData:
     CONFIRM_INPUT = "lucas123"
 
 class TransferData:
-    AMOUNT = "2000"
+    AMOUNT = "500"
 
 class BillPaymentData:
     ACCOUNT = "14787"
@@ -34,7 +34,7 @@ class UpdateData:
     UPDATE_FIRST_NAME = "Rubens"
     UPDATE_LAST_NAME = "Silva"
     UPDATE_ADDRESS = "Rua Teste"
-    UPDATE_CITY = "DF"
+    UPDATE_CITY = "Brasília"
     UPDATE_STATE = "Centro"
-    UPDATE_ZIP_CODE = "345"
+    UPDATE_ZIP_CODE = "DF"
     UPDATE_PHONE = "11945467484"
