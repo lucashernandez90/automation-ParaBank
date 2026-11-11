@@ -43,12 +43,14 @@ class TransferFundsLocators:
 
 class OpenNewAccountLocators:
 
-    LINK_NEW_ACCOUNT = (By.XPATH, "//a[text()= 'Open New Account']")
-    TYPE_ACCOUNT = (By.XPATH, "//select[@id= 'type']")
-    OPTION_CHECKING = (By.XPATH, "//option[@value = '0']")
-    OPTION_SAVINGS = (By.XPATH, "//option[@value = '1']")
-    SELECT_ACCOUNT = (By.XPATH, "//select[@id= 'fromAccountId']")
-    NEW_ACCOUNT_BUTTON = (By.XPATH, "//input[@value= 'Open New Account']")
+    LINK_NEW_ACCOUNT = (By.XPATH, "//a[text()='Open New Account']") 
+    ACCOUNT_TYPE_SELECT = (By.ID, "type")
+    FROM_ACCOUNT_SELECT = (By.ID, "fromAccountId")
+    NEW_ACCOUNT_BUTTON = (By.XPATH, "//input[@value='Open New Account']")
+
+    SUCCESS_NEW_ACCOUNT_TITLE = (By.XPATH, "//div[@id='openAccountResult']//h1[@class='title']")
+    SUCCESS_NEW_ACCOUNT_MESSAGE = (By.XPATH, "//div[@id='openAccountResult']//p[1]")
+    NEW_ACCOUNT_ID = (By.ID, "newAccountId")
 
 class BillPaymentLocators:
 
