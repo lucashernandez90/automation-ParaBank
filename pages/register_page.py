@@ -37,7 +37,11 @@ class RegisterPage(BasePage):
     
         logging.info("register camps filled")
 
-        time.sleep(5)
+    def get_welcome_title(self):
+        return self.wait.until(EC.visibility_of_element_located(RegisterLocators.WELCOME_TITLE)).text
+
+    def get_success_message(self):
+        return self.wait.until(EC.visibility_of_element_located(RegisterLocators.SUCCESS_MESSAGE)).text
 
     def username_already_exists(self, timeout=3):
         try:

@@ -19,18 +19,27 @@ class RegisterLocators:
     REGISTER_BUTTON = (By.XPATH, "//input[@value= 'Register']")
     USERNAME_ERROR = (By.ID, "customer.username.errors")
 
+    WELCOME_TITLE = (By.XPATH, "//div[@id='rightPanel']//h1[@class='title']")
+    SUCCESS_MESSAGE = (By.XPATH, "//div[@id='rightPanel']//p")
+    LOGIN_ERROR = (By.XPATH, "//div[@id='rightPanel']//p[@class='error']")
+
 class LoginLocators:
 
     USERNAME = (By.XPATH, "//input[@name= 'username']")
     PASSWORD = (By.XPATH, "//input[@name= 'password']")
-
     LOGIN_BUTTON = (By.XPATH, "//input[@value= 'Log In']")
+
+    LOGOUT_LINK = (By.LINK_TEXT, "Log Out")   
+    LOGIN_ERROR = (By.CSS_SELECTOR, "#rightPanel p.error")
 
 class TransferFundsLocators:
 
     TRANSFER_FUND_BUTTON = (By.XPATH, "//a[text()= 'Transfer Funds']")
     AMOUNT_INPUT = (By.XPATH, "//input[@id= 'amount']")
     TRANSFER_BUTTON = (By.XPATH, "//input[@value= 'Transfer']")
+
+    SUCCESS_TRANSFER_TITLE = (By.XPATH, "//div[@id='showResult']//h1[@class='title']")
+    SUCCESS_TRANSFER_MESSAGE = (By.XPATH, "//div[@id='showResult']//p[1]")
 
 class OpenNewAccountLocators:
 
@@ -56,6 +65,9 @@ class BillPaymentLocators:
     PAYEE_FROM_ACCOUNT = (By.XPATH, "//input[@name= 'fromAccountId']")
     BUTTON_SEND_PAYAMENT = (By.XPATH, "//input[@value= 'Send Payment']")
 
+    RESULT_TITLE = (By.XPATH, "//div[@id= 'billpayResult']//h1[@class='title']")
+    RESULT_MESSAGE = (By.XPATH, "//div[@id= 'billpayResult']//p")
+
 class RequestLoanLocators:
 
     LINK_REQUEST_LOAN = (By.XPATH, "//a[text()= 'Request Loan']")
@@ -74,4 +86,6 @@ class UpdateLocators:
     INPUT_UPDATE_ZIP_CODE = (By.XPATH, "//input[@id= 'customer.address.zipCode']")
     INPUT_UPDATE_PHONE = (By.XPATH, "//input[@id= 'customer.phoneNumber']")
     BUTTON_UPDATE_PROFILE = (By.XPATH, "//input[@value= 'Update Profile']")
-    
+
+    UPDATE_TITLE = (By.XPATH, "//div[@id= 'updateProfileResult']//h1[@class='title']")
+    UPDATE_MESSAGE = (By.XPATH, "//div[@id= 'updateProfileResult']//p")
